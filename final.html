@@ -24,17 +24,113 @@
 </head>
 <body>
     <!--Header + Navigation-->
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="nav-bar">
             <div class="logo">Ahan M K</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+            <!--FOR DARK MODE-->
+            <button class="theme-toggle" title="Toggle-dark mode" aria-label="Toggle dark mode">👍</button>
+            <!--Mobile Menu-->
+            <button class="mobile-menu-toggle" title="Toggle mobile menu" aria-expanded="false">☰</button>
+            </nav>
+
+        
     </header>
+    <!--MAIN CONTENT-->
+    <main>
+        <!--Hero Section-->
+        <section class="hero-section" id="hero">
+        <h1>Hi,<span class="highlight">Iam Ahan M K</span></h1>
+        <p class="tagline">I created a fast accessible website</p>
+        <div class="hero buttons">
+            <a href="" class="btn btn-primary">View My Work</a>
+            <a href="" class="btn btn-secondary">Contact Me</a>
+        </div>
+
+    </section>
+    <!--About Section-->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <div clas="about-content">
+            <figure class="profile-pic">
+                <img src="PROFILEPIC.png" alt="Profile picture" width="200">
+                <figcaption>Ahan M K</figcaption>
+            </figure>
+            <div class="about-text">
+                <p>Iam a skillful web developer</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">Javascript</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">Python</div>
+    </section>
+    <!-- Projects Section s-->
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <p>A simple application built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="PROFILEPIC.png" alt="something" width="200">
+                <h3>Real time weather app using API</h3>
+                <div class="project-tags">
+                    <span class="tag">REACT</span>
+                    <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                    <a href="#" class="btn">View Code</a>
+            </article>
+
+            
+        </div>
+        </section>
+    <!-- CONTACT SECTION -->
+            <section id="contact" class="contact-section">
+             <h2>Get In Touch</h2>
+             <form id="contact-form" action="" method="POST">
+                <div class="form-goup">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+             </form>
+            </section>
+           <!-- FOOTER -->
+             <footer class="site-footer">
+              <p> &copy; <span class="footer-year"></span> Ahan M K.
+                Build with HTML, CSS, JS</p>
+ 
+                <nav arial-label="Social links">
+                    <a href="https://github.com/ahanmk" target="_blank">Ahan M K</a>
+                    <a href="https://linkedin.com/in/ahanmk" target="_blank">LinkedIn</a>
+                </nav>
+             </footer>
+
+            </footer>
+</main>
+
+    
 
     
 </body>
