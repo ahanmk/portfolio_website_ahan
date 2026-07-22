@@ -22,6 +22,7 @@
     <meta name="twitter:image" content="PROFILEPIC.jpg">
     <title>Ahan's Portfolio</title>
     
+    
 </head>
 <body>
     <!--Header + Navigation-->
@@ -37,7 +38,7 @@
             <!--FOR DARK MODE-->
             <button class="theme-toggle" title="Toggle-dark mode" aria-label="Toggle dark mode">👍</button>
             <!--Mobile Menu-->
-            <button class="mobile-menu-toggle" title="Toggle mobile menu" aria-expanded="false">☰</button>
+            <button class="menu-toggle" title="Toggle mobile menu" aria-expanded="false">☰</button>
             </nav>
 
         
@@ -67,15 +68,17 @@
             </div>
         </div>
     </section>
-    <!-- Skills Section -->
-    <section class="skills-section" id="skills">
-        <h2>Skills</h2>
-        <div class="skill-item">HTML</div>
-        <div class="skill-item">CSS</div>
-        <div class="skill-item">Javascript</div>
-        <div class="skill-item">React</div>
-        <div class="skill-item">Python</div>
-    </section>
+    <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-level="90">HTML5</div>
+                <div class="skill-item" data-level="80">CSS3</div>
+                <div class="skill-item" data-level="75">JavaScript</div>
+                <div class="skill-item" data-level="65">React</div>
+                <div class="skill-item" data-level="70">Python</div>
+            </div>
+        </section>
     <!-- PROJECTS SECTION -->
         <section id="projects" class="projects-section">
             <h2>My Projects</h2>
@@ -113,7 +116,7 @@
             <section id="contact" class="contact-section">
              <h2>Get In Touch</h2>
              <form id="contact-form" action="" method="POST">
-                <div class="form-goup">
+                <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
@@ -140,6 +143,7 @@
              </footer>
 
             </footer>
+            <script src="script.js"></script> <!--Day 8 -->
 </main>    
 </body>
 </html>
